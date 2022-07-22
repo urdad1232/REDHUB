@@ -1,0 +1,104 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("RedHub V1", "BloodTheme")
+
+local Tab = Window:NewTab("Scripts")
+
+local ScriptsSection = Tab:NewSection("Da hood")
+
+ScriptsSection:NewButton("Faded", "Da hood script", function()
+    _G.Toggles = "V" -- You can put any keybind
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+ScriptsSection:NewButton("Vortex", "Da hood script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ImagineProUser/vortexdahood/main/vortex", true))()
+end)
+
+local ScriptsSection = Tab:NewSection("Admin")
+
+ScriptsSection:NewButton("Cmd-X", "FE Admin", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+ScriptsSection:NewButton("Infinite Yield", "FE Admin", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+local ScriptsSection = Tab:NewSection("Jailbreak")
+
+ScriptsSection:NewButton("SubHub", "Jailbreak GUI", function()
+    pcall(function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Kw6m/Subbers-scripts/main/jailbreak", true))()
+end)
+end)
+
+local ScriptsSection = Tab:NewSection("Saber Sim")
+
+ScriptsSection:NewButton("ProximaHub", "Saber Sim script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+end)
+
+local ScriptsSection = Tab:NewSection("Murder Mystery 2")
+
+ScriptsSection:NewButton("EclipseHub", "MM2 Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
+
+local ScriptsSection = Tab:NewSection("Aimbot & ESP")
+
+ScriptsSection:NewButton("OwlHub", "Amazing Aimbot and ESP", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+
+local ScriptsSection = Tab:NewSection("Anime Fighers Sim")
+
+ScriptsSection:NewButton("Anime Fighters GUI", "Random GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nivyd/ShrawuRepost/main/Shrawu.lua", true))()
+end)
+
+local ScriptsSection = Tab:NewSection("Natural Disaster")
+
+ScriptsSection:NewButton("Natural Disaster", "Natural Disaster script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()
+end)
+
+local ScriptsSection = Tab:NewSection("Bloxburg")
+
+ScriptsSection:NewButton("Chroma", "Chroma Script", function()
+    local http_request = http_request or request or (syn and syn.request) or (http and http.request) loadstring(http_request({Url="https://projectillusion.dev/free/bloxburg.lua",Method="GET"}).Body)()
+end)
+
+ScriptsSection:NewLabel("More scripts soon!")
+
+local Tab = Window:NewTab("Player")
+
+local PlayerSection = Tab:NewSection("Player")
+
+PlayerSection:NewSlider("Walkspeed", "Go faster!!!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.Walkspeed = s 
+end)
+
+PlayerSection:NewSlider("JumpPower", "Jump higher", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Press X to fly (BROKEN)", "Press X to fly", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+        Fly(true)
+end)
+
+local Others = Window:NewTab("Others")
+local OthersSection = Others:NewSection("Others")
+
+OthersSection:NewButton("Chat Spoofer", "Lets you chat for other players", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+end)
+
+
+local Tab = Window:NewTab("Credits")
+local CreditsSection = Tab:NewSection("Credits")
+
+CreditsSection:NewLabel("By Empathy?#0008")
