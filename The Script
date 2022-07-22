@@ -84,7 +84,7 @@ PlayerSection:NewSlider("JumpPower", "Jump higher", 500, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-PlayerSection:NewButton("Press X to fly (BROKEN)", "Press X to fly", function()
+PlayerSection:NewButton("Press X to fly Use R15", "Press X to fly", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
 
         Fly(true)
