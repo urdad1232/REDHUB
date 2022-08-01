@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("RedHub V1", "BloodTheme")
+local Window = Library.CreateLib("RedHub V1.4", "BloodTheme")
 
 local Tab = Window:NewTab("Scripts")
 
@@ -104,6 +104,36 @@ ScriptsSection:NewButton("TR1V5", "You need a key it will be provided in my disc
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Games/Pet%20Simulator%20X"))()
 end)
 
+local ScriptsSection = Tab:NewSection("Adopt me")
+
+ScriptsSection:NewButton("V.G HUB", "Adopt me script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+ScriptsSection:NewButton("EclipseHub", "Adopt me script", function()
+    getgenv().mainKey = "nil" local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+local ScriptsSection = Tab:NewSection("Project Slayers")
+
+ScriptsSection:NewButton("Project Slayers", "Project Slayers script!", function()
+    repeat wait() until game:IsLoaded()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/lazyhub.lua"))()
+    end)
+
+    local ScriptsSection = Tab:NewSection("Build a boat for treasure")
+
+    ScriptsSection:NewButton("Vynixius", "execute for good script:)", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
+        end)
+
+        local ScriptsSection = Tab:NewSection("One Peace Game")
+
+        ScriptsSection:NewButton("lazyhub", "Autofarming", function()
+            repeat wait() until game:IsLoaded()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/lazyhub.lua"))()
+            end)
+
 local Tab = Window:NewTab("Player")
 
 local PlayerSection = Tab:NewSection("Player")
@@ -152,12 +182,20 @@ SettingsSection:NewKeybind("Toggle UI", "toggles the UI", Enum.KeyCode.F, functi
 	Library:ToggleUI()
 end)
 
-SettingsSection:NewButton("OceanTheme", "Purple", function()
-    loadstring(Game:HttpGet("https://pastebin.com/raw/tWd3TRwi"))()
+SettingsSection:NewButton("Ocean", "PurpleTheme", function()
+    loadstring(Game:HttpGet("https://pastebin.com/raw/f9PjQsUd"))()
 end)
 
-SettingsSection:NewButton("SynapseTheme", "Theme", function()
-    loadstring(Game:HttpGet("https://pastebin.com/raw/RL6FgHaj"))()
+SettingsSection:NewButton("SynapseTheme", "Synapse", function()
+    loadstring(Game:HttpGet("https://pastebin.com/raw/FgUdr6Mr"))()
+end)
+
+SettingsSection:NewButton("GrapeTheme", "Grape theme", function()
+    loadstring(Game:HttpGet("https://pastebin.com/raw/ERDQxKmh"))()
+end)
+
+SettingsSection:NewButton("Sentinel", "Sentinel executor theme", function()
+    loadstring(Game:HttpGet("https://pastebin.com/raw/VjWrQxqn"))()
 end)
 
 
@@ -173,4 +211,4 @@ local Tab = Window:NewTab("Credits")
 local CreditsSection = Tab:NewSection("Credits")
 
 CreditsSection:NewLabel("By Empathy?#0008")
-CreditsSection:NewLabel("Version bump 1.3.1")
+CreditsSection:NewLabel("Version bump V1.4")
